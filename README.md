@@ -31,7 +31,7 @@
 
 ---
 
-## Architecture (vue simple)
+## Architecture (vue simple) 
 ```mermaid
 flowchart LR
   A[Opérateur / Atelier] --> B[IHM Python (Tkinter)]
