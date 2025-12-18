@@ -31,7 +31,6 @@ Stage orienté automatisation / digitalisation atelier : IHM Python connectées 
 - Dossier Drive (vidéos, PDF, images) :  
   https://drive.google.com/drive/folders/1ak32aWUnkS-qCLmmsp6HQZzghjTfE-tz?usp=sharing
 
-Conseil : organise le Drive en sous-dossiers `videos/`, `pdf/`, `images/`.
 
 ---
 
