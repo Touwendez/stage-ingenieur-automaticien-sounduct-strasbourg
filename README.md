@@ -36,11 +36,14 @@
 flowchart LR
   A[Opérateur / Atelier] --> B[IHM Python (Tkinter)]
   B <--> C[ERP]
-  A --> D[QR Code Scan/Gen]
+
+  A --> D[QR Code (scan/génération)]
   D --> B
 
-  E[Caméra] --> F[Raspberry Pi]
+  E[Caméra] --> F[Raspberry Pi (Linux)]
   F --> G[Pipeline Vision (OpenCV + modèle IA)]
   G --> H{Bac vide ?}
-  H -- Oui --> I[Ordre robot MyCobot]
-  H -- Non --> J[Monitoring / Logs]
+  H -- Oui --> I[Ordre vers robot MyCobot]
+  H -- Non --> J[Logs / Monitoring]
+
+
