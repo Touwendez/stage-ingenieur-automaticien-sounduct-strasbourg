@@ -53,7 +53,7 @@ Si tu ajoutes des images “vitrine”, mets-les dans `images/` (ou `captures/`)
 ## Architecture
 ```mermaid
 flowchart LR
-  A[Operateur Atelier] --> B[IHM Python]
+  A[Operateur Atelier] --> B[IHM Python Tkinter]
   B <--> C[ERP]
 
   A --> D[QR Code Scan Generation]
