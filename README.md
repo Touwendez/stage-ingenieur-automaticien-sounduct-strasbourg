@@ -45,8 +45,14 @@ Stage orienté automatisation / digitalisation atelier : IHM Python connectées 
 - CAO : SolidWorks
 
 ---
-<video src="./assets/1218.mp4" controls width="800"></video>
-<video src="./assets/1218(2).mp4" controls width="800"></video>
+
+https://github.com/user-attachments/assets/274b1799-67df-4aa3-9425-f496b20a1ccc
+
+
+
+https://github.com/user-attachments/assets/1bb528b9-57f3-4280-a076-17ef4ea20665
+
+
 
 ## Architecture
 
