@@ -51,14 +51,13 @@ Si tu ajoutes des images “vitrine”, mets-les dans `images/` (ou `captures/`)
 ---
 
 ## Architecture
+
 ```mermaid
 flowchart LR
-  A[Operateur Atelier] --> B[IHM Python Tkinter]
+  A[Operateur Atelier] --> B[IHM Python]
   B <--> C[ERP]
-
   A --> D[QR Code Scan Generation]
   D --> B
-
   E[Camera] --> F[Raspberry Pi Linux]
   F --> G[Vision OpenCV Modele IA]
   G --> H{Bac vide}
