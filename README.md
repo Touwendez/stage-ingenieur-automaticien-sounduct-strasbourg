@@ -1,6 +1,18 @@
 # Stage ingénieur automaticien — Sounduct (Strasbourg)
 
-> Stage orienté automatisation / digitalisation atelier : IHM Python connectées ERP, traçabilité QR, vision embarquée (Raspberry Pi) et automatisation via robot collaboratif.
+Stage orienté automatisation / digitalisation atelier : IHM Python connectées à un ERP, traçabilité QR, vision embarquée (Raspberry Pi) et automatisation via robot collaboratif.
+
+---
+
+## Sommaire
+- [Aperçu](#aperçu)
+- [Ressources](#ressources)
+- [Stack](#stack)
+- [Architecture](#architecture)
+- [Contributions](#contributions)
+- [Résultats](#résultats)
+- [Confidentialité](#confidentialité)
+- [Contact](#contact)
 
 ---
 
@@ -9,41 +21,40 @@
 - Mise en place un système de traçabilité par codes QR (génération/lecture, suivi des flux, remontée d’informations).
 - Conçu une application de vision embarquée sur Raspberry Pi pour détecter automatiquement les bacs vides.
 - Implémenté et entraîné des modèles de détection/vision avec OpenCV et TensorFlow / PyTorch.
-- Automatisé l’action correctrice en envoyant des ordres au robot collaboratif MyCobot pour le remplacement des bacs via le pipeline Python.
+- Automatisé l’action correctrice en envoyant des ordres au robot collaboratif MyCobot pour le remplacement des bacs via un pipeline Python.
 
 ---
 
-## Démo & livrables
-- Vidéos (Drive) : LIEN_DRIVE_VIDEOS
-- PDF / rapport (Drive) : LIEN_DRIVE_PDF
-- Images (Drive) : LIEN_DRIVE_IMAGES
+## Ressources
+- Dossier Drive (vidéos, PDF, images) :
+  - https://drive.google.com/drive/folders/1ak32aWUnkS-qCLmmsp6HQZzghjTfE-tz?usp=sharing
 
+Astuce : si tu veux un rendu encore plus propre, crée dans Drive des sous-dossiers `videos/`, `pdf/`, `images/` et (optionnel) mets ici aussi les liens directs vers chacun.
 
 ---
 
 ## Stack
-- Logiciel : Python, Tkinter, OpenCV
-- IA / Vision : TensorFlow, PyTorch
-- Embarqué : Raspberry Pi, Linux
-- Traçabilité : QR codes (génération/lecture)
-- Robotique : MyCobot (envoi d’ordres / automatisation)
-- ERP (connexion et échanges)
+- Python, Tkinter
+- OpenCV
+- TensorFlow, PyTorch
+- Raspberry Pi, Linux
+- Codes QR (génération / lecture)
+- ERP (connexion & échanges)
+- Robot collaboratif MyCobot (envoi d’ordres)
 
 ---
 
-## Architecture (vue simple) 
+## Architecture
 ```mermaid
 flowchart LR
-  A[Opérateur / Atelier] --> B[IHM Python (Tkinter)]
+  A[Operateur Atelier] --> B[IHM Python Tkinter]
   B <--> C[ERP]
 
-  A --> D[QR Code (scan/génération)]
+  A --> D[QR Code Scan Generation]
   D --> B
 
-  E[Caméra] --> F[Raspberry Pi (Linux)]
-  F --> G[Pipeline Vision (OpenCV + modèle IA)]
-  G --> H{Bac vide ?}
-  H -- Oui --> I[Ordre vers robot MyCobot]
-  H -- Non --> J[Logs / Monitoring]
-
-
+  E[Camera] --> F[Raspberry Pi Linux]
+  F --> G[Vision OpenCV Modele IA]
+  G --> H{Bac vide}
+  H -- Oui --> I[Commande MyCobot]
+  H -- Non --> J[Logs Monitoring]
