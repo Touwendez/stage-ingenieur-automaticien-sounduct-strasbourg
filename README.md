@@ -46,8 +46,8 @@ Conseil : organise le Drive en sous-dossiers `videos/`, `pdf/`, `images/`.
 - CAO : SolidWorks
 
 ---
-assets/1218.mp4
-assets/1218(2).mp4
+<video src="./assets/1218.mp4" controls width="800"></video>
+<video src="./assets/1218(2).mp4" controls width="800"></video>
 
 ## Architecture
 
